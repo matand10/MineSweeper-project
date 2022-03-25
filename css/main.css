@@ -1,0 +1,133 @@
+html {
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    color: rgb(146, 146, 146);
+}
+
+.game-menu {
+    height: 100px;
+    margin-bottom: 90px;
+}
+
+.game-menu table td {
+    padding: 5px 20px 10px;
+}
+
+table{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-spacing: 0;
+}
+
+
+.cell{
+    font-weight: bold;
+    background-color: grey;
+}
+
+.reset-Btn {
+    background: none;
+    border: none;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.container{
+    background-color: rgb(63, 59, 59);;
+}
+
+.game{
+    margin-top: 10px;
+}
+
+
+
+.board td{
+    width: 40px;
+    height:40px;
+    text-align: center;
+    /* font-size: 20px; */
+    background-color: #525252;
+    border: 2px solid rgb(167, 167, 167);
+    transition: all 100ms;
+    color: rgb(24, 24, 24);
+}
+
+.cell:hover {
+    background-color: rgb(53, 53, 53);;
+}
+
+
+.hidden {
+    font-size: 0;
+}
+
+.revealed {
+    background-color: rgb(68, 68, 68);
+    font-size: 20px;
+}
+
+.bomb{
+    font-size: 20px;
+}
+
+.flag {
+    font-size: 20px;
+}
+
+.safe-click{
+    background-color: white;
+    transition-duration: 200ms;
+}
+
+.level-btn{
+    margin-top: 20px;
+}
+
+.buttons-container {
+    margin-bottom: 20px;
+}
+
+.level-btn {
+    background-color: rgb(223, 223, 223);
+    width: 140px;
+    height: 40px;
+    border: 3px solid black;
+    transition: all 100ms;
+}
+
+.level-btn:hover {
+    background-color: rgb(160, 160, 160);
+}
+
+.hint-btn {
+    background-color: rgb(223, 223, 223);
+    width: 210px;
+    height: 50px;
+    border: 3px solid black;
+    transition: all 100ms;
+}
+
+.hint-btn:hover {
+    background-color: rgb(160, 160, 160);
+}
+
+.footer{
+    padding-top: 30px;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(63, 59, 59);
+    margin-top: auto;
+}

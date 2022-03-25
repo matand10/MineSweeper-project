@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Mine Sweeper</title>
+</head>
+
+<body onload="init()">
+
+    <div class="container">
+        <h1>Mine Sweeper</h1>
+        <p>Time: <span class="time">0</span></p>
+        <p>Flags: <span class="flag">99</span></p>
+        <p>Lives: <span class="lives"></span></p>
+    </div>
+
+    <!-- <div class="game-menu">
+    </div> -->
+
+    <div class="game">
+        <button class="reset-Btn" onclick="restart()">😁</button>
+        <table>
+            <thead class="game-panel">
+            </thead>
+            <tbody class="board"></tbody>
+        </table>
+    </div>
+
+    <div class="buttons-container">
+        <h3>Your best: <span class="score"></span> seconds</h3>
+        <button class="level-btn" onclick="setLevel(4)">Easy</button>
+        <button class="level-btn" onclick="setLevel(8)">Medium</button>
+        <button class="level-btn" onclick="setLevel(12)">Hard</button>
+        <br>
+        <br>
+        <button onclick="safeClick()" class="hint-btn"><span class="safe-clicks">3</span> Safe Click</button>
+        <button onclick="sevenBoomOn()" class="hint-btn"><span class="btn"></span> 7 BOOM</button>
+        <button onclick="allowHint()" class="hint-btn"><span class="btn bulb">3</span> hints</button>
+    </div>
+
+
+
+
+    <div class="footer">&copy Matan Damary</div>
+
+
+    <script src="scripts/sounds.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/recursion.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+
+</html>
