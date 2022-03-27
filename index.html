@@ -15,13 +15,10 @@
 
     <div class="container">
         <h1>Mine Sweeper</h1>
-        <p>Time: <span class="time">0</span></p>
+        <p>Time: <span class="time">0</span> seconds</p>
         <p>Flags: <span class="flag">99</span></p>
         <p>Lives: <span class="lives"></span></p>
     </div>
-
-    <!-- <div class="game-menu">
-    </div> -->
 
     <div class="game">
         <button class="reset-Btn" onclick="restart()">😁</button>
@@ -40,8 +37,11 @@
         <br>
         <br>
         <button onclick="safeClick()" class="hint-btn"><span class="safe-clicks">3</span> Safe Click</button>
+        <button onclick="allowHint()" class="hint-btn"><span class="btn bulb">3</span> Hints</button>
         <button onclick="sevenBoomOn()" class="hint-btn"><span class="btn"></span> 7 BOOM</button>
-        <button onclick="allowHint()" class="hint-btn"><span class="btn bulb">3</span> hints</button>
+        <button onclick="manualCreateOn()" class="hint-btn"><span class="place-bombs"></span> Manual Mood</button>
+        <!-- <button onclick="undo()" class="hint-btn">Undo</button> -->
+        <h4 class="manual-msg"></h4>
     </div>
 
 
@@ -51,10 +51,16 @@
 
 
     <script src="scripts/sounds.js"></script>
-    <script src="scripts/modal.js"></script>
-    <script src="scripts/utils.js"></script>
-    <script src="scripts/recursion.js"></script>
-    <script src="scripts/game.js"></script>
+    <script src="scripts/Features/hints.js"></script>
+    <script src="scripts/Features/manual.js"></script>
+    <script src="scripts/Features/seven-boom.js"></script>
+    <script src="scripts/Features/safe-click.js"></script>
+    <script src="scripts/main/model.js"></script>
+    <script src="scripts/main/utils.js"></script>
+    <script src="scripts/main/recursion.js"></script>
+    <script src="scripts/main/game_over.js"></script>
+    <script src="scripts/main/cell_click_events.js"></script>
+    <script src="scripts/main/game.js"></script>
 </body>
 
 </html>
